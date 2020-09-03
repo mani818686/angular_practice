@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {DataService } from '../data.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
-
+  data;
+  constructor(private ds:DataService) { }
+  
   ngOnInit(): void {
+  
   }
+
+
 
 }
